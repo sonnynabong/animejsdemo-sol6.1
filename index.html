@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#141716" />
+    <meta name="description" content="A scroll-driven study of a chronograph. Explore its construction, one layer at a time." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Chronograph — A study in motion</title>
+  </head>
+  <body>
+    <main>
+      <section id="scroll-study" aria-label="Scroll to explore the chronograph's construction">
+        <div class="stage">
+          <header class="masthead">
+            <a class="wordmark" href="#scroll-study" aria-label="Chronograph, back to the beginning"><span class="brand-icon" aria-hidden="true">✳</span> FORM<span class="wordmark-slash">/</span>STUDIES</a>
+            <span class="masthead-center">AN INTERACTIVE OBJECT STUDY</span>
+            <a class="source-link" href="https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/ChronographWatch/README.md" target="_blank" rel="noopener noreferrer">THE OBJECT <span aria-hidden="true">↗</span></a>
+          </header>
+
+          <div class="intro">
+            <div class="eyebrow"><span class="status-dot"></span> STUDY 001 <span class="eyebrow-separator">/</span> CHRONOGRAPH</div>
+            <h1>A matter<br />of <em>precision.</em></h1>
+            <p class="intro-description">One object. A world of details.<br />Scroll to take a closer look.</p>
+          </div>
+
+          <div class="sequence-heading" aria-hidden="true"><span class="eyebrow">BENEATH THE SURFACE</span><p id="sequence-title">Layer by<br /><em>layer.</em></p></div>
+
+          <div class="scene-panel" role="img" aria-label="A gold and carbon fiber chronograph watch that separates into layers as you scroll">
+            <div class="scene-halo" aria-hidden="true"></div>
+            <div class="scene-cross cross-top" aria-hidden="true">+</div>
+            <div class="scene-cross cross-bottom" aria-hidden="true">+</div>
+            <canvas id="watch-canvas" aria-hidden="true"></canvas>
+            <img class="fallback-image" src="/models/watch-preview.jpg" alt="Gold chronograph watch with a dark carbon fiber band" hidden />
+            <div class="loading" role="status" aria-live="polite"><span class="loading-orbit" aria-hidden="true"></span><span id="loading-text">Preparing the object · 0%</span><button id="retry" type="button" hidden>Try again ↗</button></div>
+            <span class="object-coordinate" aria-hidden="true">OBJ—001 / 13 COMPONENTS</span>
+          </div>
+
+          <aside class="chapter" aria-label="Current construction layer">
+            <div class="chapter-top"><span id="chapter-number">01</span><span class="chapter-rule"></span><span id="chapter-category">THE COMPLETE OBJECT</span></div>
+            <h2 id="chapter-title">Designed to come together.</h2>
+            <p id="chapter-description">Every layer has a place. Every detail, a purpose.</p>
+          </aside>
+
+          <nav class="chapter-nav" aria-label="Jump to a construction layer">
+            <button class="chapter-dot is-active" data-stop="0" aria-label="View the assembled watch" aria-current="step"><span>01</span></button>
+            <button class="chapter-dot" data-stop="0.4" aria-label="View the glass and bezel"><span>02</span></button>
+            <button class="chapter-dot" data-stop="0.65" aria-label="View the dial and hands"><span>03</span></button>
+            <button class="chapter-dot" data-stop="1" aria-label="View the fully disassembled watch"><span>04</span></button>
+          </nav>
+
+          <footer class="stage-footer">
+            <a class="scroll-cue" href="#credits"><span class="scroll-arrow" aria-hidden="true">↓</span><span id="scroll-hint">SCROLL TO DISASSEMBLE</span></a>
+            <div class="progress-block"><span class="progress-label">EXPLORATION</span><span class="progress-track"><span id="progress-fill"></span></span><span id="progress-value">000<span>%</span></span></div>
+            <span class="engine-credit">MOTION BY <a href="https://animejs.com/" target="_blank" rel="noopener noreferrer">ANIME.JS ↗</a></span>
+          </footer>
+        </div>
+      </section>
+
+      <section class="credits" id="credits" aria-labelledby="credits-title">
+        <div class="credits-heading"><span class="eyebrow">THE END OF THE STUDY</span><h2 id="credits-title">Details make<br /><em>the difference.</em></h2><a class="replay" href="#scroll-study">Explore again <span aria-hidden="true">↑</span></a></div>
+        <div class="credits-detail"><span class="eyebrow">OPEN ASSET. OPEN POSSIBILITIES.</span><p>Chronograph Watch by graphiccompressor, adapted by Eric Chadwick / Darmstadt Graphics Group. Shared under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.</p><p>This study adds scroll-driven component separation and lighting. The source geometry and materials are preserved.</p><a class="credits-source" href="https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/ChronographWatch/README.md" target="_blank" rel="noopener noreferrer">Explore the source asset ↗</a><span class="credits-footnote">Three.js × Anime.js <span>001 — CHRONOGRAPH</span></span></div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

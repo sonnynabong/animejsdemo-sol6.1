@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.verification/
+test-results/
+playwright-report/
+*.local
+*.log
